@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as v;
+
+body {
+  background-color: v.$bg-main;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: v.$spacing-xl auto;
+  padding: 0 v.$spacing-lg;
+}
+
+h2 {
+  color: v.$text-dark;
+  margin-bottom: v.$spacing-md;
+  border-bottom: 2px solid v.$bg-main;
+  padding-bottom: 10px;
+}
+
+@for $i from 1 through 3 {
+  .mb-#{$i * 10} {
+    margin-bottom: $i * 10px;
+  }
+}

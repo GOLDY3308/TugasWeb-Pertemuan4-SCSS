@@ -1,0 +1,22 @@
+@use "variables" as v;
+
+@mixin flex-center($gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin card-shadow {
+  background-color: v.$bg-card;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+@mixin input-focus-effect {
+  &:focus {
+    outline: none;
+    border-color: v.$accent-color;
+    box-shadow: 0 0 5px rgba(56, 189, 248, 0.3);
+  }
+}

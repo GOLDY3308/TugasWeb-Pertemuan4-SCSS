@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+section {
+  @include m.card-shadow;
+  padding: v.$spacing-xl;
+  margin-bottom: v.$spacing-xl;
+}
